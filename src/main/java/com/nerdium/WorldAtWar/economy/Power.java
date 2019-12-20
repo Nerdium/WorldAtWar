@@ -14,7 +14,7 @@ public class Power implements Currency {
     private boolean isDefault;
     private boolean prefixSymbol;
     private boolean isTransferable;
-    private BigDecimal startBalance;
+    private BigDecimal startingBalance;
 	
     public Power() {
         singular = Text.of("Power");
@@ -24,7 +24,7 @@ public class Power implements Currency {
         isDefault = false;
         numFractionDigits = 1;
         isTransferable = false;
-        startBalance = BigDecimal.ZERO;
+        startingBalance = BigDecimal.ZERO;
     }
     
 	@Override
@@ -75,8 +75,8 @@ public class Power implements Currency {
 		return isTransferable;
 	}
 
-	public BigDecimal getStartBalance() {
-		return startBalance;
+	public BigDecimal getStartingBalance() {
+		return startingBalance;
 	}
 
 }
