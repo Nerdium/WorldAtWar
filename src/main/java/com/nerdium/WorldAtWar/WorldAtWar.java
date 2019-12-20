@@ -25,15 +25,12 @@ public class WorldAtWar {
 
 	private AccountManager accountManager;
 	private Power power;
-	public static WorldAtWar instance;
 	
 	@Inject
 	Logger logger;
 	
 	@Listener
 	public void onGameInit(GameInitializationEvent event) {
-		
-		instance = this;
 	
 		accountManager = new AccountManager(this);
 		
@@ -45,7 +42,7 @@ public class WorldAtWar {
 			.executor(new SendMessage(accountManager))
 			.build();
 		
-		Sponge.getCommandManager().register(instance, command, "waw");
+		Sponge.getCommandManager().register(this, command, "waw");
 		
 	}
 	
