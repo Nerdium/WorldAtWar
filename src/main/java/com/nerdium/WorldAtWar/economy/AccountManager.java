@@ -28,7 +28,7 @@ public class AccountManager implements EconomyService {
 
 	@Override
 	public Currency getDefaultCurrency() {
-		return waw.getPowerCurrency();
+		return null;//waw.getPowerCurrency();
 	}
 
 	@Override

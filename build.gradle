@@ -12,8 +12,11 @@ description = 'This is a factions plugin that simulates war and global economy.'
 
 repositories {
     jcenter()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
     compile 'org.spongepowered:spongeapi:7.1.0'
+    compile 'com.github.webbukkit:DynmapCoreAPI:v2.5'
+    
 }
